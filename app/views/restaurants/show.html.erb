@@ -1,4 +1,9 @@
 <div>
+  <h3><%= @restaurant.name %></h3>
+  <p>We specialize in <%= @restaurant.category %> fine dining.</p>
+  <p>You won't regret eating here.</p>
+  <p>Book a table now @ <%= @restaurant.phone_number %>.</p>
+  <p><%= "We're located @ #{@restaurant.address}" %>.</p>
   <p><strong>Reviews</strong></p>
   <ul class="list-group">
     <% @restaurant.reviews.each do |review| %>
