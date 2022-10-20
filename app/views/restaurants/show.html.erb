@@ -1,4 +1,4 @@
-<div>
+<div class=container>
   <h3><%= @restaurant.name %></h3>
   <p>We specialize in <%= @restaurant.category %> fine dining.</p>
   <p>You won't regret eating here.</p>
@@ -11,4 +11,6 @@
     <% end %>
   </ul>
   <br>
+  <p class="btn btn-light"><%= link_to "Add a review!", new_restaurant_review_path(@restaurant.id) %></p>
+  <p class="btn btn-light"><%= link_to "Back", restaurants_path %></p>
 </div>
