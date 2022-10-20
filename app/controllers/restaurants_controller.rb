@@ -19,6 +19,7 @@ class RestaurantsController < ApplicationController
   end
 
   def show
+    @review = Review.new
   end
 
   private
@@ -30,4 +31,5 @@ class RestaurantsController < ApplicationController
   def set_restaurant
     @restaurant = Restaurant.find(params[:id])
   end
+
 end
